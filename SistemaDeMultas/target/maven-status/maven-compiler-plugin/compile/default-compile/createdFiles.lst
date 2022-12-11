@@ -1,0 +1,10 @@
+Model\Multa.class
+Dao\CondutorDao.class
+Model\Condutor.class
+Service\MultaService.class
+Dao\MultaDao.class
+Service\VeiculoService.class
+Service\SistemaService.class
+Dao\VeiculoDao.class
+Service\CondutorService.class
+Model\Veiculo.class
