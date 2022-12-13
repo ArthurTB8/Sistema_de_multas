@@ -37,7 +37,7 @@ O sistema possui algumas validações, como por exemplo, não podemos criar um v
   </a>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/devitu-py/">@VictorAlmeida</a>
+<a href="https://www.linkedin.com/in/arthur-teixeira-8885b1241/">@Arthur Teixeira</a>
 
 </p>
 </p>
