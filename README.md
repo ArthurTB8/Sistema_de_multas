@@ -33,7 +33,7 @@ O sistema possui algumas validações, como por exemplo, não podemos criar um v
 <p>
 <p align="center">
   <a href="https://github.com/ArthurTB8">
-    <img width="120px" src="https://avatars.githubusercontent.com/u/101343369?" alt="Foto Victor Almeida">
+    <img width="120px" src="https://avatars.githubusercontent.com/u/107354840?v=4" alt="Foto Arthur Teixeira">
   </a>
 
 <p align="center">
