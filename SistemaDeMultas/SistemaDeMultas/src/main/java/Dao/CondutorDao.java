@@ -22,7 +22,7 @@ public class CondutorDao{
         return true;
     }
 
-    // CONSULTAR
+
     public Condutor getCondutor(String cnh) {
         Long idCondutor = getIdCondutor(cnh);
         if (idCondutor == null) {

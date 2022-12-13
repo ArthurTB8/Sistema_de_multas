@@ -1,11 +1,11 @@
 package Service;
 
-import Model.Multa;
-import Model.Veiculo;
 import Dao.MultaDao;
 import Dao.VeiculoDao;
+import Model.Multa;
+import Model.Veiculo;
+
 import java.util.List;
-import java.util.Optional;
 
 public class MultaService {
     private MultaDao multaDao = new MultaDao();

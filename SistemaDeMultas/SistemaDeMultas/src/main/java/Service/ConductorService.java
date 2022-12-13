@@ -26,7 +26,8 @@ public class ConductorService {
         return null;
     }
 
-    public void atualizarPontuacaoCNH(Condutor condutor) {
+    public void atualizaPontuacaoCNH(Condutor condutor) {
+
         condutorDao.atualizarPontuacaoCNH(condutor);
     }
 }

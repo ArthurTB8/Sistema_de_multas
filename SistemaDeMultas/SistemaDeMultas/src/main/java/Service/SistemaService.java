@@ -9,6 +9,9 @@ import java.util.Scanner;
 
 public class SistemaService {
 
+
+
+
     private static Scanner entrada = new Scanner(System.in);
     private static ConductorService condutorService = new ConductorService();
     private static VeiculoService veiculoService = new VeiculoService();
@@ -18,7 +21,7 @@ public class SistemaService {
         boolean repetir = true;
         while (repetir) {
             System.out.println("==========================================");
-            System.out.println("======== Sistema Multas 1000Devs =========");
+            System.out.println("             Sistema de Multas            ");
             System.out.println("==========================================");
             System.out.println("1 - Condutor");
             System.out.println("2 - Veiculo");
@@ -30,10 +33,10 @@ public class SistemaService {
                     painelCondutor();
                     break;
                 case 2:
-                    painelVeiculo();
+                    MenuVeiculo();
                     break;
                 case 3:
-                    painelMulta();
+                    painelDeMultas();
                     break;
                 case 4:
                     repetir = false;
@@ -43,10 +46,10 @@ public class SistemaService {
         }
     }
 
-    private static void painelMulta() {
+    private static void painelDeMultas() {
         while (true) {
             System.out.println("==========================================");
-            System.out.println("============ Painel Multa ================");
+            System.out.println("             Painel de Multas             ");
             System.out.println("==========================================");
             System.out.println("1 - Cadastrar");
             System.out.println("2 - Litar multas por veiculo");
@@ -129,14 +132,14 @@ public class SistemaService {
             System.out.println("Sua CNH está presa!");
         } else {
             condutor.setPontuacao((int) (condutor.getPontuacao() - multa.getPontuacao()));
-            condutorService.atualizarPontuacaoCNH(condutor);
+            condutorService.atualizaPontuacaoCNH(condutor);
         }
     }
 
-    private static void painelVeiculo() {
+    private static void MenuVeiculo() {
         while (true) {
             System.out.println("==========================================");
-            System.out.println("============ Painel Veiculo =============");
+            System.out.println("              Menu Veiculo              ");
             System.out.println("==========================================");
             System.out.println("1 - Cadastrar");
             System.out.println("2 - Transferir");
@@ -167,11 +170,11 @@ public class SistemaService {
     private static void informacoesVeiculo(Veiculo v) {
         if (v.getId() != null) {
             System.out.println("==========================================");
-            System.out.println("================ VEICULO =================");
+            System.out.println("=                VEICULO                  ");
             System.out.println("==========================================");
             System.out.println("Modelo: " + v.getModelo());
             System.out.println("Marca: " + v.getMarca());
-            System.out.println("Ano: " + v.getAno());
+            System.out.println("Ano em padrão Americano (mês-dia-ano): " + v.getAno());
             System.out.println("Placa: " + v.getPlaca());
             System.out.println("Proprietario: " + condutorService.buscarCondutor(v.getCondutor().getNumeroCnh()).getNome());
         }
@@ -189,7 +192,7 @@ public class SistemaService {
             v.setCondutor(c);
             if (veiculoService.atualizarVeiculo(v)) {
                 System.out.println("==========================================");
-                System.out.println("=== Tranferencia efetuada com sucesso! ===");
+                System.out.println("    Tranferencia efetuada com sucesso!    ");
                 System.out.println("==========================================");
             }
         } catch (NullPointerException e) {
@@ -201,13 +204,13 @@ public class SistemaService {
     private static Veiculo dadosVeiculo() {
         Veiculo v = new Veiculo();
         System.out.println("==========================================");
-        System.out.println("=========== Cadastrar Veiculo ============");
+        System.out.println("            Cadastrar Veiculo             ");
         System.out.println("==========================================");
         System.out.print("Modelo: ");
         v.setModelo(entrada.nextLine());
         System.out.print("Marca: ");
         v.setMarca(entrada.nextLine());
-        System.out.print("Ano: ");
+        System.out.print("Ano em padrão Americano (mês-dia-ano): ");
         v.setAno(entrada.nextLine());
         System.out.print("Placa: ");
         v.setPlaca(entrada.nextLine());
@@ -219,7 +222,7 @@ public class SistemaService {
     private static void painelCondutor() {
         while (true) {
             System.out.println("==========================================");
-            System.out.println("============ Painel Condutor =============");
+            System.out.println("             Painel Condutor              ");
             System.out.println("==========================================");
             System.out.println("1 - Cadastrar");
             System.out.println("2 - Buscar");
@@ -252,8 +255,8 @@ public class SistemaService {
             System.out.println("----------- Dados do Condutor ------------");
             System.out.println("Nome: " + c.getNome());
             System.out.println("Número da CNH: " + c.getNumeroCnh());
-            System.out.println("Data Emissor: " + c.getDataEmissor());
-            System.out.println("Data Emissão: " + c.getDataEmissao());
+            System.out.println("Orgão Emissor: " + c.getOrgaoEmissor());
+            System.out.println("Data da emissão no padrão Americano (mês-dia-ano): " + c.getDataEmissao());
             System.out.println("Pontuação: " + c.getPontuacao());
         }
     }
@@ -261,16 +264,16 @@ public class SistemaService {
     private static Condutor dadosCondutor() {
         Condutor condutor = new Condutor();
         System.out.println("==========================================");
-        System.out.println("=========== Cadastrar Condutor ===========");
+        System.out.println("            Cadastrar Condutor            ");
         System.out.println("==========================================");
         System.out.print("Nome: ");
         condutor.setNome(entrada.nextLine());
         System.out.print("Número da CNH: ");
         condutor.setNumeroCnh(entrada.nextLine());
-        System.out.print("Data de Emissão: ");
+        System.out.print("Data de emissão no padrão Americano (mês-dia-ano): ");
         condutor.setDataEmissao(LocalDate.parse(entrada.nextLine()));
-        System.out.print("Data de Emissor: ");
-        condutor.setDataEmissor(LocalDate.parse(entrada.nextLine()));
+        System.out.print("Orgão Emissor: ");
+        condutor.setOrgaoEmissor(String.valueOf(entrada.nextLine()));
         condutor.setPontuacao(21);
         return condutor;
 
@@ -278,9 +281,9 @@ public class SistemaService {
 
     private static Condutor getCondutor() {
         System.out.println("==========================================");
-        System.out.println("================ Condutor ================");
+        System.out.println("                 Condutor                 ");
         System.out.println("==========================================");
-        System.out.print("Informe o número da CNH: ");
+        System.out.print("Informe o número de sua CNH: ");
         String cnh = entrada.nextLine();
         return condutorService.buscarCondutor(cnh);
 

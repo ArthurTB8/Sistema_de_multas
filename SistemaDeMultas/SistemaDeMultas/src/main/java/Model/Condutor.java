@@ -11,13 +11,17 @@ public class Condutor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+
     private String nome;
+
 
     private String numeroCnh;
 
+
     private LocalDate dataEmissao;
 
-    private LocalDate dataEmissor;
+    private String orgaoEmissor;
 
     private Integer pontuacao;
 
@@ -56,12 +60,12 @@ public class Condutor {
         this.dataEmissao = dataEmissao;
     }
 
-    public LocalDate getDataEmissor() {
-        return dataEmissor;
+    public String getOrgaoEmissor() {
+        return orgaoEmissor;
     }
 
-    public void setDataEmissor(LocalDate dataEmissor) {
-        this.dataEmissor = dataEmissor;
+    public void setOrgaoEmissor(String orgaoEmissor) {
+        this.orgaoEmissor = orgaoEmissor;
     }
 
     public Integer getPontuacao() {
