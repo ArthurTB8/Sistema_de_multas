@@ -29,7 +29,7 @@ O sistema possui algumas validações, como por exemplo, não podemos criar um v
     • O objetivo pricipal é a comunicação de uma aplicação com o banco de dados, bem como a persistência das informações.
     • A conexão é realizada via Hibernate, e a aplicação usa conceitos de POO, como herança e polimorfismo.
    
-<h2 id="Desenvolvedor">: Desenvolvedor</h2>
+<h2 id="Desenvolvedor"> Desenvolvedor</h2>
 <p>
 <p align="center">
   <a href="https://github.com/ArthurTB8">
