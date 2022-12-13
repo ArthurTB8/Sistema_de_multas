@@ -13,7 +13,7 @@
 
 <h2 id="SistemaDeMultas"> :computer_mouse: Sistema de multas</h2>
 
-O exercício proposto pela academia 1000 Devs, realizado pela Mesttra em parceria com a Johnson & Johnson MedTech, simula uma interface de gerenciamento de um sistema de multas, sem interface gráfica definida e rodando através do terminal do sistema operacional. O programa está conectado a um banco de dados (postgres) local, para realização da persistência dos dados. Utilizando ferramentas como Hibernate para gerenciar as operações com o banco de dados, fazendo o correto mapeamento entre as entidades com suas respectivas cardinalidades.<br>
+O exercício proposto pela academia 1000 Devs,  simula uma interface de gerenciamento de um sistema de multas, sem interface gráfica definida e rodando através do terminal do sistema operacional. O programa está conectado a um banco de dados (Mysql) local, para realização da persistência dos dados. Utilizando ferramentas como Hibernate para gerenciar as operações com o banco de dados, fazendo o correto mapeamento entre as entidades com suas respectivas cardinalidades.<br>
 
 <h2 id="descricao">:pencil2: Descrição</h2>
 
