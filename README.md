@@ -26,7 +26,7 @@ O exercício proposto pela academia 1000 Devs, realizado pela Mesttra em parceri
 O sistema possui algumas validações, como por exemplo, não podemos criar um veiculo sem um condutor, ou uma multa sem um veiculo associado, explorando as opções de mapeamento como Optional, Cascade e Fetch.
 
 ### Qual o objetivo?
-    • O objetivo pricipal é a comunicação de uma aplicação com o banco de dados, bem como a persistência das informações.
+    • O objetivo pricipal é a comunicação de uma aplicação com o banco de dados e a persistência das informações.
     • A conexão é realizada via Hibernate, e a aplicação usa conceitos de POO, como herança e polimorfismo.
    
 <h2 id="Desenvolvedor"> Desenvolvedor</h2>
