@@ -26,15 +26,13 @@ O exercício proposto pela academia 1000 Devs, realizado pela Mesttra em parceri
     
 #### Alem disso:
      
-      • é possível criar um condutor sem um veículo; 
+      • É possível criar um condutor sem um veículo; 
 
-      • não é possível criar uma multa para um veículo inexistente;
+      • Não é possível criar uma multa para um veículo inexistente;
 
-      • não é possível criar uma um veículo sem um condutor associado;
+      • Não é possível criar uma um veículo sem um condutor associado;
 
-      • crie a funcionalidade vendaVeiculo, que transfere um veículo de um condutor pro outrol
-
-      • é possível listar multas por veículo;
+      • É possível listar multas por veículo;
       
 O sistema possui algumas validações, como por exemplo, não podemos criar um veiculo sem um condutor, ou uma multa sem um veiculo associado, explorando as opções de mapeamento como Optional, Cascade e Fetch.
 
