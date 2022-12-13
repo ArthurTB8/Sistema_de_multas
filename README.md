@@ -32,7 +32,7 @@ O sistema possui algumas validações, como por exemplo, não podemos criar um v
 <h2 id="Desenvolvedor">:man: Desenvolvedor</h2>
 <p>
 <p align="center">
-  <a href="https://github.com/vitucomment">
+  <a href="https://github.com/ArthurTB8">
     <img width="120px" src="https://avatars.githubusercontent.com/u/101343369?" alt="Foto Victor Almeida">
   </a>
 
